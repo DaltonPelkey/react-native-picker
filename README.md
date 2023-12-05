@@ -23,6 +23,26 @@ Refer to Reanimated's [getting started guide](https://docs.swmansion.com/react-n
 
 ---
 
+## Example
+```tsx
+const items = useRef(
+  Array.from(new Array(1000))
+  .map((_, index) => ({
+    value: `Option ${index+1}`
+  }))
+).current
+
+...
+
+<Picker
+  data={items}
+  defaultValue={"Option 13"}
+  onChange={value => console.log(value)}
+  itemHeight={45}
+/>
+```
+---
+
 ## Methods
 
 | Method | Params | Description |
