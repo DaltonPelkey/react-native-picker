@@ -34,8 +34,8 @@ export type PickerProps = {
 	barColor?: string;
 	itemTextStyle?: TextStyle;
 	itemDisabledTextStyle?: TextStyle;
-	itemStyle?: ViewStyle;
-	itemDisabledStyle?: ViewStyle;
+	itemStyle?: Omit<ViewStyle, 'height'>;
+	itemDisabledStyle?: Omit<ViewStyle, 'height'>;
 	style?: Omit<ViewStyle, 'height'>
 }
 
