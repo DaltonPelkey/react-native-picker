@@ -1,0 +1,62 @@
+{
+  "name": "@dpelkey98/react-native-picker",
+  "version": "1.0.0",
+  "author": "Dalton Pelkey <dpelkey98@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/DaltonPelkey/react-native-picker#readme",
+  "bugs": "https://github.com/DaltonPelkey/react-native-picker/issues",
+  "description": "Dead simple picker component designed for React Native and Expo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaltonPelkey/react-native-picker"
+  },
+  "keywords": [
+    "picker",
+    "react-native",
+    "react",
+    "select"
+  ],
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "typescript": "tsc",
+    "build": "bob build"
+  },
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "react-native": "src/index",
+  "source": "src/index",
+  "types": "lib/typescript/index.d.ts",
+  "peerDependencies": {
+    "@react-native-masked-view/masked-view": ">=0.3.0",
+    "@shopify/flash-list": ">=1.6.3",
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-reanimated": ">=3.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/react-native": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "devDependencies": {
+    "react-native-builder-bob": "^0.23.2",
+    "typescript": "^5.3.2"
+  }
+}
